@@ -1,0 +1,25 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>User Login and Sessions Signup</title>
+	<link rel="stylesheet" type="text/css" href="/static/stylesheet.css">
+</head>
+<body> -->
+<div ng-controller='userAuthController'>
+	<div class="form-container">
+		<p class="form-header">Sign Up</p>
+		<form>
+			<label>Username:</label>
+				<input type="text" ng-model=newUser.username><br>
+			<label>Password:</label>
+				<input type="text" ng-model=newUser.password><br>
+			<label>Email:</label>
+				<input type="email" ng-model=newUser.email><br>
+				<input type="submit" value="Register" ng-click='registerNewUser($index)'>
+		</form>
+		{{info}}
+		{{info.username}}
+	</div>
+</div>	
+<!-- </body>
+</html> -->

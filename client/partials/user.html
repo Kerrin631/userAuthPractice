@@ -1,0 +1,22 @@
+<div ng-controller ='userAuthController'>
+
+<h2>hello</h2>
+{{info}}
+<div ng-repeat='x in info'>
+	{{x.username}}
+</div>
+<p>{{info[0].username}}</p>
+	<div class="form-container">
+		<p class="form-header">User Profile</p>
+		<form method="POST" action="/user/update">
+			<label>Username:</label>
+				<input type="text" name="username" ng-model='user.username' disabled><br>
+			<label>Email:</label>
+				<input type="text" name="email" ng-model='user.email'><br>
+				<input type="submit" value="Save">
+		</form>
+	</div>
+	<form method="POST" action="/user/delete">
+		<input type="submit" value="Delete User">
+	</form>
+	{{error}}
