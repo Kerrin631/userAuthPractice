@@ -1,15 +1,11 @@
-<div ng-controller = 'userAuthController'>
+<div ng-controller = 'NavCtrl'>
 
+		<h2>Welcome, You are logged in as {{ currentUser() }}</h2>
 
-		<!-- <div ng-repeat='x in info'> -->
-		<h2>Welcome, You are logged in as {{info[0].username}} <%= username %></h2>
-		{{info}}
-		<!-- </div> -->
-		<a href="#/logout">logout</a>
-		<a href="#/user">Edit User</a>
-		<p>Place Your Code Here</p>
+		<li ng-show="isLoggedIn()">{{ currentUser() }}</li>
+        <li ng-show="isLoggedIn()"><a href="" ng-click="logOut()">Log Out</a></li>
+        <a href="#/user">User Update</a>
 	</div>
-	{{msg}}
-	<%= msg %>
+
 
 </div>

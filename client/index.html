@@ -5,13 +5,14 @@
 	<!-- THESE TWO VERSIONS BELOW MUST MATCH!!!! -->
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular-route.min.js"></script>
+    <script src="http://angular-ui.github.io/ui-router/release/angular-ui-router.min.js"></script>
 
     <!-- call stylesheet -->
     <link rel="stylesheet" type="text/css" href="/static/stylesheet.css">
 
     <!-- Add JS Libraries -->
     	<!-- Add jQuery -->
-    	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
     <!-- call front end routes -->
     <script type="text/javascript" src='/angular/app.js'></script> 
@@ -25,7 +26,7 @@
 <body>
 	<h1>User Auth Test</h1>
 
-	<div ng-view=''>
+	<div ui-view=''>
 
 	</div> 
 </body>
